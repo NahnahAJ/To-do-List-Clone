@@ -22,7 +22,6 @@ newList.addEventListener('submit', (e) => {
   e.preventDefault();
   const listValue = newInput.value;
   if (listValue === null || listValue === '') return;
-  // holder.innerHTML = '';
   const list = createNewList(listValue);
   populate(list);
   tasks.push(list);
@@ -36,8 +35,6 @@ loadTasks();
 // Function to clear all checked boxes
 clear.addEventListener('click', () => {
   const tasksAll = JSON.parse(localStorage.getItem('store_now'));
-  // const completedItem = document.querySelectorAll('.completed');
-  // completedItem.forEach((val) => val.parentElement.remove());
   const filteredList = tasksAll.filter((obj) => obj.completed !== true);
   localStorage.setItem('store_now', JSON.stringify(filteredList));
   window.location.reload();
