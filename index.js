@@ -10,11 +10,7 @@ const saveToStorage = (newTask) => {
   localStorage.setItem('store_now', JSON.stringify(newTask));
 };
 
-let totaltasks = tasks.length;
-const indexFunc = () => {
-  totaltasks += 1;
-  return totaltasks;
-};
+const indexFunc = () => tasks.length + 1;
 
 const createNewList = (name) => ({ index: indexFunc(), description: name, completed: false });
 
