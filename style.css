@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 38rem;
+  height: 75vh;
+  position: fixed;
+  top: 35%;
+  left: 40%;
+  margin-top: -100px;
+  margin-left: -200px;
+  background-color: #fff;
+  z-index: 11;
+  box-shadow: 10px 5px 5px rgb(24, 24, 24);
+  overflow: scroll;
+}
+
+span {
+  display: flex;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  gap: 27rem;
+  margin: 1rem;
+  width: 100%;
+}
+
+#list-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+  align-items: center;
+}
+
+p {
+  color: rgba(128, 128, 128, 0.7);
+  margin: 1rem;
+}
+
+.bottom button {
+  color: rgba(128, 128, 128, 0.7);
+  padding: 1rem;
+  border: none;
+}
+
+.form button {
+  margin: 0.5rem;
+  background-color: #fff;
+  border: none;
+  font-size: 2rem;
+}
+
+.bottom button:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  width: 100%;
+}
+
+.bottom {
+  color: rgba(128, 128, 128, 0.5);
+  background-color: rgba(128, 128, 128, 0.1);
+  width: 90vh;
+  text-align: center;
+}
+
+.edit,
+.menu,
+.swap-btn {
+  background-color: white;
+  padding: 0.3rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.edit,
+.swap-btn {
+  display: none;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form input {
+  border: none;
+  padding: 1rem;
+  width: 100%;
+}
+
+.todo {
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.todo,
+.form input {
+  font-family: "Poppins", sans-serif;
+}
+
+.completed {
+  color: rgba(20, 19, 19);
+  text-decoration: line-through;
+}
